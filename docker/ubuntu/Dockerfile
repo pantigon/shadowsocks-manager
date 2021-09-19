@@ -13,7 +13,7 @@ RUN apt-get update && \
     tar -xvf shadowsocks-v1.11.2.x86_64-unknown-linux-musl.tar && \
     mv /tmp/ssmanager /usr/bin/ && \
     rm -rf /tmp/* && \
-    echo "Asia/Shanghai" > /etc/timezone && \
+    echo "Asia/Ho_Chi_Minh" > /etc/timezone && \
     rm /etc/localtime && \
     dpkg-reconfigure -f noninteractive tzdata
 CMD ["/usr/bin/ssmgr"]
