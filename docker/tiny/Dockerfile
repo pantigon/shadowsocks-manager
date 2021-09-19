@@ -7,7 +7,7 @@ RUN apt-get update && \
     curl -sL https://deb.nodesource.com/setup_12.x | bash - && \
     apt-get install -y nodejs shadowsocks-libev && \
     git clone https://github.com/gyteng/shadowsocks-manager-tiny.git ssmgr && \
-    echo "Asia/Shanghai" > /etc/timezone && \
+    echo "Asia/Ho_Chi_Minh" > /etc/timezone && \
     rm /etc/localtime && \
     dpkg-reconfigure -f noninteractive tzdata
 CMD ["node", "/ssmgr"]
