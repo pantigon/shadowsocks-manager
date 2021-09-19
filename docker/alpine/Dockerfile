@@ -26,6 +26,6 @@ RUN set -ex \
   && rm -rf /tmp/repo
 RUN apk --no-cache add tzdata iproute2 && \
     ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
-    echo "Asia/Shanghai" > /etc/timezone && \
+    echo "Asia/Ho_Chi_Minh" > /etc/timezone && \
     npm i -g shadowsocks-manager --unsafe-perm
 CMD ["ssmgr"]
